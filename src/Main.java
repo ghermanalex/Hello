@@ -310,7 +310,7 @@ public class Main {
 
         //8)
         System.out.println("8)");
-        op.maxLista()
+        System.out.println(op.maxLista(list));
 
     }
 
