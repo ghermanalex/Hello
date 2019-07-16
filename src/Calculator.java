@@ -1,15 +1,14 @@
 public class Calculator {
 
 
-
-    public int adunare(int primulNumar, int alDoileaNumar){
+    public int adunare(int primulNumar, int alDoileaNumar) {
 
         int rezultat = primulNumar + alDoileaNumar;
 
         return rezultat;
     }
 
-    public double adunare(double primulNumar, double alDoileaNumar){
+    public double adunare(double primulNumar, double alDoileaNumar) {
 
         double rezultat = primulNumar + alDoileaNumar;
 
@@ -17,41 +16,39 @@ public class Calculator {
     }
 
 
-    public  int scadere(int primulNumar, int alDoileaNumar){
+    public int scadere(int primulNumar, int alDoileaNumar) {
         int rezultat = primulNumar - alDoileaNumar;
 
         return rezultat;
     }
 
-    public  double scadere(double primulNumar, double alDoileaNumar){
+    public double scadere(double primulNumar, double alDoileaNumar) {
         double rezultat = primulNumar - alDoileaNumar;
 
         return rezultat;
     }
 
 
-    public  long inmultire(int primulNumar, int alDoileaNumar){
+    public long inmultire(int primulNumar, int alDoileaNumar) {
         long rezultat = primulNumar * alDoileaNumar;
 
         return rezultat;
     }
 
-    public  double inmultire(double primulNumar, double alDoileaNumar){
+    public double inmultire(double primulNumar, double alDoileaNumar) {
         double rezultat = primulNumar * alDoileaNumar;
 
         return rezultat;
     }
 
-    public  double imparire(int primulNumar, int alDoileaNumar)
-    {
-        double rezultat = (primulNumar*1.0) / (alDoileaNumar*1.0);
+    public double imparire(int primulNumar, int alDoileaNumar) {
+        double rezultat = (primulNumar * 1.0) / (alDoileaNumar * 1.0);
 
         return rezultat;
     }
 
-    public  double imparire(double primulNumar, double alDoileaNumar)
-    {
-        double rezultat = (primulNumar*1.0) / (alDoileaNumar*1.0);
+    public double imparire(double primulNumar, double alDoileaNumar) {
+        double rezultat = (primulNumar * 1.0) / (alDoileaNumar * 1.0);
 
         return rezultat;
     }

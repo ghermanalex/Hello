@@ -1,0 +1,58 @@
+import java.util.ArrayList;
+import java.util.InputMismatchException;
+import java.util.List;
+import java.util.Scanner;
+
+public class Read {
+
+    public Integer readKeyboardInteger()throws InputMismatchException
+    {
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Enter an integer:");
+        Integer number = keyboard.nextInt();
+        return number;
+    }
+
+
+    public Float readKeyboardFloat()throws InputMismatchException
+    {
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Enter an float number:");
+        Float number = keyboard.nextFloat();
+        return number;
+    }
+
+
+    public Double readKeyboardDouble()throws InputMismatchException
+    {
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Enter an double number:");
+        Double number = keyboard.nextDouble();
+        return number;
+    }
+
+    public Long readKeyboardLong()throws InputMismatchException
+    {
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Enter an long number:");
+        Long number = keyboard.nextLong();
+        return number;
+    }
+
+
+    public List<Integer> readNumbers(Integer length) throws InputMismatchException
+    {
+        List<Integer> numbersList = new ArrayList<>();
+        Scanner keyboard = new Scanner(System.in);
+        while(length!=0){
+            System.out.println("Enter an integer:");
+            Integer number = keyboard.nextInt();
+            numbersList.add(number);
+            length--;
+        }
+        return numbersList;
+    }
+
+
+
+}

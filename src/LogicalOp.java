@@ -1,5 +1,7 @@
 import java.lang.reflect.Array;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class LogicalOp {
 
@@ -373,57 +375,107 @@ public class LogicalOp {
 
     }
 
-    public void copiaza(Integer myArray1[],Integer myArray2[]) {
+    public void copiaza(Integer myArray1[], Integer myArray2[]) {
 
         for (int i = 0; i < myArray1.length; i++) {
-            myArray2[i]=myArray1[i];
+            myArray2[i] = myArray1[i];
         }
 
     }
 
 
-    public void afisareLista(List<Integer> list){
-        list.stream().forEach(x->System.out.println(x));
+    public void afisareLista(List<Integer> list) {
+        list.stream().forEach(x -> System.out.println(x));
     }
 
-    public void adaugareFinal(List<Integer> list, Integer e ){
+    public void adaugareFinal(List<Integer> list, Integer e) {
         list.add(e);
     }
 
-    public void afisarePornindNumar(List<Integer> list, Integer e){
-       for(int i = e;i<list.size();i++){
-           System.out.println(list.get(i));
-       }
-    }
-
-    public void afisareReverse(List<Integer> list){
-        for(int i=list.size()-1;i>=0; i--){
+    public void afisarePornindNumar(List<Integer> list, Integer e) {
+        for (int i = e; i < list.size(); i++) {
             System.out.println(list.get(i));
         }
     }
 
-    public void adaugareListaPoz(List<String> list,String str, Integer poz ){
+    public void afisareReverse(List<Integer> list) {
+        for (int i = list.size() - 1; i >= 0; i--) {
+            System.out.println(list.get(i));
+        }
+    }
+
+    public void adaugareListaPoz(List<String> list, String str, Integer poz) {
         list.add(poz, str);
     }
 
-    public void adaugarePrimaPoz(List<String> list,String str ){
-        list.add(0,str);
+    public void adaugarePrimaPoz(List<String> list, String str) {
+        list.add(0, str);
     }
 
-    public void afisareValoriiPoz(List<String> list){
-        for(int i = 0;i<list.size();i++){
-            System.out.println("Pe pozitia "+ i+ " este valoarea " + list.get(i));
+    public void afisareValoriiPoz(List<String> list) {
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println("Pe pozitia " + i + " este valoarea " + list.get(i));
         }
     }
 
-    public Integer maxLista(List<Integer> list){
+    public Integer maxLista(List<Integer> list) {
         Integer max = list.get(0);
-        for(Integer a:list)
-        {
-            if(max<a)
-                max=a;
+        for (Integer a : list) {
+            if (max < a)
+                max = a;
         }
         return max;
     }
+
+
+    public void adaugareFinalHashSet(Map<Integer, String> map, Integer key, String value) {
+        map.put(key, value);
+    }
+
+    public void afisareELementHasSet(Map<Integer, String> map) {
+        for (Integer key : map.keySet()) {
+            System.out.println(key + "->" + map.get(key));
+        }
+    }
+
+    public Integer numarElementHashSet(Map<Integer, String> map) {
+        return map.size();
+    }
+
+    public void golireHashSet(Map<Integer, String> map) {
+        map.clear();
+    }
+
+    public Boolean verificareEmptyHashSet(Map<Integer, String> map) {
+        return map.isEmpty();
+    }
+
+    public Map<Integer, String> clonareHashSet(Map<Integer, String> map) {
+        Map<Integer, String> newMap = new HashMap<>();
+        newMap.putAll(map);
+        return newMap;
+    }
+
+    public Boolean equalsHashSets(Map<Integer, String> map1, Map<Integer, String> map2) {
+        Boolean bool = true;
+        for (Integer key : map1.keySet()) {
+            if (!map2.containsKey(key))
+                bool = false;
+
+        }
+        return bool;
+
+    }
+
+    public void stergereToateElement(Map<Integer, String> map) {
+        map.clear();
+    }
+
+
+
+
 }
+
+
+
 
