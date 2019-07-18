@@ -517,7 +517,18 @@ public class Main {
             System.out.println("Invalid number entered, exception:"+ e);
         }
 
-        //4) 5) 6) pe maine
+        //4)
+        System.out.println("4)");
+        System.out.println("Read integers numbers from keyborad, to stop enter a character or float number");
+        numbersList = read.readNumbers();
+
+
+        //5)
+        System.out.println("5");
+        op.printPozitionInList(numbersList, 10);
+
+        //6)
+        System.out.println("6)");
 
 
     }

@@ -472,7 +472,14 @@ public class LogicalOp {
     }
 
 
+    public void printPozitionInList(List<Integer> numbers, Integer position){
 
+        try{
+            System.out.println(numbers.get(position));
+        }catch (IndexOutOfBoundsException e) {
+            System.out.println("Inside catch, number too large");
+        }
+    }
 
 }
 
